@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'ksiazki/style.css' %}">
+
+<h1>Potwierdzenie usunięcia</h1>
+<p>Czy na pewno chcesz usunąć książkę: "{{ ksiazka.tytul }}"?</p>
+
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Tak, usuń</button>
+  <a href="{% url 'lista_ksiazek' %}">Anuluj</a>
+</form>

@@ -1,0 +1,10 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'ksiazki/style.css' %}">
+
+<h1>Formularz książki</h1>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Zapisz</button>
+</form>
+<a href="{% url 'lista_ksiazek' %}">Wróć</a>
