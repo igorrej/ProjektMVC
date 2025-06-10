@@ -11,6 +11,7 @@ Prosta aplikacja służąca do zarządzania książkami w bibliotece
 ## Funkcje projektu
 - Dodawanie książek
 - Edytowanie książek
+- Usuwanie książek
 - Przeglądanie listy książek
 
 ## Instrukcja uruchomienia w cmd
